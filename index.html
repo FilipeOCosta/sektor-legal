@@ -1,36 +1,410 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sektor · Cronometragem e telemetria de karting</title>
+<title>Sektor · Karting lap timing and telemetry</title>
+<meta name="description" content="Sektor turns your karting sessions into lap times, racing lines and corner-by-corner analysis — and lets you race your friends long after you've left the track. For iPhone and Android.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="wrap">
+<body class="home">
 
-<header class="site">
-  <span class="brand">Sektor</span>
-  <h1>Cronometragem e telemetria de karting</h1>
-  <p class="updated">Aplicação para iPhone e Android</p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="speed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e60514"/>
+      <stop offset=".35" stop-color="#f2b705"/>
+      <stop offset=".6" stop-color="#1fb85a"/>
+      <stop offset=".85" stop-color="#f2b705"/>
+      <stop offset="1" stop-color="#e60514"/>
+    </linearGradient>
+    <path id="track" d="M60 90 C60 65 85 60 105 70 L150 92 C172 103 170 130 148 134 L110 140 C95 143 95 158 110 162 L150 172 C175 179 172 212 148 216 L70 226 C45 229 35 210 45 195 L60 170 C68 158 62 145 50 140 C35 133 40 115 60 90 Z"/>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="container">
+    <a class="brand" href="./"><img src="icon.png" alt=""><span>Sektor<small>Every tenth counts</small></span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="suporte.html">Support</a>
+    </nav>
+  </div>
 </header>
 
-<p class="lead">O Sektor importa sessões de karting, deteta as voltas, e mostra onde ganhaste e onde perdeste tempo — volta a volta, curva a curva, e contra os teus amigos.</p>
+<main>
 
-<p>Funciona sem rede: as sessões, as pistas e as corridas vivem no teu telemóvel, com uma cópia no servidor para não as perderes. O que outras pessoas veem de ti é só o que tu ligares.</p>
+<section class="hero">
+  <div class="container">
+    <div>
+      <p class="eyebrow">Karting lap timing &amp; telemetry</p>
+      <h1>Find the tenth you're missing.</h1>
+      <p class="lead">Sektor turns your karting sessions into <strong>lap times</strong>, <strong>racing lines</strong> and <strong>corner-by-corner analysis</strong> — and lets you race your friends long after you've left the track.</p>
+      <p class="lead">Bring the data from your GoPro, RaceBox or lap timer. Sektor does the rest, on your phone, even with no signal at the circuit.</p>
+      <div class="stores">
+        <span class="store"><svg viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 3v13h10V5H7Zm5 14.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/></svg><span><span>Coming soon to the</span><b>App Store</b></span></span>
+        <span class="store"><svg viewBox="0 0 24 24"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"/></svg><span><span>Coming soon to</span><b>Google Play</b></span></span>
+      </div>
+      <p class="store-note">For iPhone and Android. Free to download.</p>
+    </div>
 
-<h2>Informação legal e apoio</h2>
-<ul>
-  <li><a href="privacidade.html">Política de Privacidade</a></li>
-  <li><a href="termos.html">Termos de Utilização</a></li>
-  <li><a href="suporte.html">Suporte e contacto</a></li>
-  <li><a href="apagar-conta.html">Apagar a conta</a></li>
-</ul>
+    <div class="phones" aria-hidden="true">
+      <div class="phone ios">
+        <div class="screen">
+          <div class="map">
+            <svg viewBox="0 0 200 430" preserveAspectRatio="xMidYMin slice">
+              <path d="M0 40 Q80 55 200 20 M20 0 Q30 120 0 300" stroke="#fff" stroke-opacity=".6" stroke-width="5" fill="none"/>
+              <use href="#track" fill="none" stroke="#9aa19a" stroke-width="16" stroke-linejoin="round"/>
+              <use href="#track" fill="none" stroke="#5b605c" stroke-width="12" stroke-linejoin="round"/>
+              <use href="#track" fill="none" stroke="url(#speed)" stroke-width="3.5" stroke-linejoin="round"/>
+              <rect x="80" y="72" width="3" height="16" fill="#e60514" transform="rotate(-62 81 80)"/>
+              <circle cx="148" cy="134" r="4" fill="#8b3dff" stroke="#fff" stroke-width="1.5"/>
+              <circle cx="70" cy="226" r="4" fill="#1fb85a" stroke="#fff" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="sheet">
+            <h4>Baltar · Saturday</h4>
+            <div class="sub">11 laps · RaceBox Mini</div>
+            <div class="stats">
+              <div><span class="sub">Best lap</span><b class="best">52.814</b></div>
+              <div><span class="sub">Top</span><b>78 km/h</b></div>
+              <div><span class="sub">Distance</span><b>11.2 km</b></div>
+            </div>
+            <ul class="rows">
+              <li><span>Lap 4</span><span class="best">52.814 <span class="pill">BEST</span></span></li>
+              <li><span>Lap 5</span><span>53.107</span></li>
+              <li><span>Lap 6</span><span>52.990</span></li>
+              <li><span>Lap 7</span><span>53.402</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-<footer class="site">
-  <span>Sektor · aplicação independente</span>
+      <div class="phone android">
+        <div class="screen">
+          <div class="pane">
+            <h3>Compare laps</h3>
+            <div class="sub">Lap 4 vs lap 7</div>
+            <div class="card chart">
+              <div class="sub">Speed</div>
+              <svg viewBox="0 0 200 80">
+                <polyline points="0,60 15,30 30,18 45,40 55,62 70,35 90,15 105,22 115,55 130,60 145,32 165,14 180,30 200,52" fill="none" stroke="#8b3dff" stroke-width="2.2" stroke-linejoin="round"/>
+                <polyline points="0,62 15,34 30,22 45,48 55,68 70,42 90,19 105,26 115,62 130,66 145,38 165,18 180,34 200,56" fill="none" stroke="#e60514" stroke-width="2.2" stroke-linejoin="round" stroke-opacity=".8"/>
+              </svg>
+              <div class="legend"><span><i style="background:#8b3dff"></i>Lap 4</span><span><i style="background:#e60514"></i>Lap 7</span></div>
+            </div>
+            <div class="card chart">
+              <div class="sub">Time gained / lost</div>
+              <svg viewBox="0 0 200 60">
+                <line x1="0" y1="20" x2="200" y2="20" stroke="currentColor" stroke-opacity=".2"/>
+                <polyline points="0,20 30,22 50,28 60,34 90,36 110,38 120,46 150,48 180,52 200,55" fill="none" stroke="#1fb85a" stroke-width="2.2" stroke-linejoin="round"/>
+              </svg>
+              <div class="legend"><span>Lap 4 is <b class="delta-good">0.588 s</b> faster</span></div>
+            </div>
+            <div class="card">
+              <div class="corner"><span><b>Turn 3</b><br><span class="sub">Braked 9 m earlier</span></span><span class="delta-bad">+0.214</span></div>
+            </div>
+            <div class="card">
+              <div class="corner"><span><b>Turn 7</b><br><span class="sub">4 km/h more at the apex</span></span><span class="delta-good">−0.102</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="features">
+  <div class="container">
+    <div class="copy">
+      <h2>Import any session</h2>
+      <h3>Your data, from the gear you already have.</h3>
+      <p>Open a GoPro video, a RaceBox file or an export from another lap timer, and Sektor finds the laps on its own. Set the start/finish line after the session — right on the racing line you actually drove — and every lap is timed to the hundredth.</p>
+      <ul class="chips">
+        <li>GoPro</li><li>RaceBox</li><li>GPX</li><li>VBO</li><li>NMEA</li>
+      </ul>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="phone ios solo">
+        <div class="screen">
+          <div class="pane">
+            <h3>New session</h3>
+            <div class="sub">Baltar · choose a file</div>
+            <div class="card file"><span class="ext" style="background:#2f7cf6">MP4</span><span><b>GX010482.MP4</b><span class="sub">GoPro HERO · GPS telemetry</span></span></div>
+            <div class="card file"><span class="ext" style="background:#e60514">CSV</span><span><b>RaceBox_Session_12.csv</b><span class="sub">RaceBox Mini · 25 Hz</span></span></div>
+            <div class="card file"><span class="ext" style="background:#1fb85a">GPX</span><span><b>baltar-qualifying.gpx</b><span class="sub">GPS track</span></span></div>
+            <div class="card">
+              <b style="font-size:12px">Reading GX010482.MP4</b>
+              <div class="sub">11 laps found · out lap discarded</div>
+              <div class="progress"><i></i></div>
+            </div>
+            <div class="card">
+              <ul class="rows">
+                <li style="border-top:0"><span>Lap 1</span><span>54.220</span></li>
+                <li><span>Lap 2</span><span>53.315</span></li>
+                <li><span>Lap 3</span><span class="best">52.990</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="container">
+    <div class="copy">
+      <h2>Lap and corner analysis</h2>
+      <h3>See exactly where the time goes.</h3>
+      <p>Lay two laps over each other and Sektor shows you, corner by corner, where you braked too early, carried less speed or took a tighter line. Mini-sectors light up purple, green and yellow, and the coach turns it all into three things to try next session.</p>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="phone android solo">
+        <div class="screen">
+          <div class="pane">
+            <h3>Corner by corner</h3>
+            <div class="sub">Lap 7 against your best</div>
+            <div class="card">
+              <div class="sub">Mini-sectors</div>
+              <div class="sectors">
+                <i style="background:#8b3dff"></i><i style="background:#1fb85a"></i><i style="background:#f2b705"></i><i style="background:#1fb85a"></i><i style="background:#f2b705"></i><i style="background:#f2b705"></i><i style="background:#8b3dff"></i><i style="background:#1fb85a"></i><i style="background:#f2b705"></i><i style="background:#1fb85a"></i>
+              </div>
+            </div>
+            <div class="card"><div class="corner"><span><b>Turn 1</b><br><span class="sub">Same line, same speed</span></span><span class="delta-good">−0.012</span></div></div>
+            <div class="card"><div class="corner"><span><b>Turn 3</b><br><span class="sub">Braked 9 m earlier</span></span><span class="delta-bad">+0.214</span></div></div>
+            <div class="card"><div class="corner"><span><b>Turn 5</b><br><span class="sub">Apex 1.4 m wide</span></span><span class="delta-bad">+0.131</span></div></div>
+            <div class="card"><div class="corner"><span><b>Turn 7</b><br><span class="sub">4 km/h more at the apex</span></span><span class="delta-good">−0.102</span></div></div>
+            <div class="card">
+              <b style="font-size:12px">Coach</b>
+              <div class="sub">Brake later into turn 3 — the data says you can hold it 9 metres longer.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="container">
+    <div class="copy">
+      <h2>Race your friends</h2>
+      <h3>Settle it with data, not with stories.</h3>
+      <p>Run your own races and championships, with standings worked out for you. Add a friend's session to the race and compare your lap with theirs, line against line — or type in the times from the rental track's sheet when that's all there is.</p>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="phone ios solo">
+        <div class="screen">
+          <div class="pane">
+            <h3>Winter Cup</h3>
+            <div class="sub">Championship · round 4 of 6</div>
+            <div class="card">
+              <ul class="rows">
+                <li style="border-top:0"><span class="pos p1">1</span><span class="who">Rita</span><span>82 pts</span></li>
+                <li class="me"><span class="pos p2">2</span><span class="who">You</span><span>76 pts</span></li>
+                <li><span class="pos p3">3</span><span class="who">Miguel</span><span>71 pts</span></li>
+                <li><span class="pos">4</span><span class="who">Tiago</span><span>58 pts</span></li>
+                <li><span class="pos">5</span><span class="who">Inês</span><span>44 pts</span></li>
+              </ul>
+            </div>
+            <div class="card">
+              <b style="font-size:12px">Round 4 · Baltar</b>
+              <div class="sub">Fastest lap: Rita · <span class="best">52.611</span></div>
+            </div>
+            <div class="card chart">
+              <div class="sub">You vs Rita · best laps</div>
+              <svg viewBox="0 0 200 60">
+                <line x1="0" y1="30" x2="200" y2="30" stroke="currentColor" stroke-opacity=".2"/>
+                <polyline points="0,30 25,28 50,26 70,34 95,38 120,33 140,36 165,40 200,42" fill="none" stroke="#e60514" stroke-width="2.2" stroke-linejoin="round"/>
+              </svg>
+              <div class="legend"><span>Rita is <b class="delta-bad">0.203 s</b> ahead — mostly in turn 5</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="container">
+    <div class="copy">
+      <h2>Track leaderboards</h2>
+      <h3>How fast is fast, at your track?</h3>
+      <p>Every official layout has a public leaderboard of best laps, split by kart class. Choose a pilot name and your best lap joins it; remove the name and it's gone. Only the time is ever published — never your telemetry. Leaderboards are free, for everyone.</p>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="phone android solo">
+        <div class="screen">
+          <div class="pane">
+            <h3>Baltar</h3>
+            <div class="sub">Leaderboard · 390cc</div>
+            <div class="card">
+              <ul class="rows">
+                <li style="border-top:0"><span class="pos p1">1</span><span class="who">J. Ferreira</span><span class="best">51.902</span></li>
+                <li><span class="pos p2">2</span><span class="who">Rita M.</span><span>52.611</span></li>
+                <li><span class="pos p3">3</span><span class="who">Duarte</span><span>52.740</span></li>
+                <li class="me"><span class="pos">4</span><span class="who">You</span><span>52.814</span></li>
+                <li><span class="pos">5</span><span class="who">Miguel S.</span><span>53.055</span></li>
+                <li><span class="pos">6</span><span class="who">Tiago</span><span>53.380</span></li>
+                <li><span class="pos">7</span><span class="who">Carla P.</span><span>53.912</span></li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="sub">Only your name and best lap are public. Your telemetry stays yours.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="more">
+  <div class="container">
+    <h2 class="section-title">And a whole lot more…</h2>
+    <div class="grid">
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></div>
+        <h4>Video beside the data</h4>
+        <p>Watch your onboard footage in sync with the telemetry, or two laps side by side.</p>
+      </div>
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg></div>
+        <h4>3D track view</h4>
+        <p>Replay your racing line over the real shape of the circuit.</p>
+      </div>
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+        <h4>Official track catalogue</h4>
+        <p>Start/finish lines and sectors for real circuits, agreed on by the drivers who race there.</p>
+      </div>
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0 1 20 0"/><path d="M5.5 12a10 10 0 0 1 13 0"/><path d="M9 15.5a5 5 0 0 1 6 0"/><path d="M3 3l18 18"/></svg></div>
+        <h4>Works with no signal</h4>
+        <p>Your sessions live on your phone. Import and analyse at the track, sync when you're back.</p>
+      </div>
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8.5 7 10 4-1.5 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h4>Private by design</h4>
+        <p>No ads, no tracking, no analytics SDKs. Others see only what you switch on.</p>
+      </div>
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2A5 5 0 0 1 21 19"/></svg></div>
+        <h4>Who was on track with you</h4>
+        <p>See which friends drove the same circuit at the same time, and share sessions one by one.</p>
+      </div>
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 4v16"/><path d="M5 8h14"/><path d="m5 8-3 6a3 3 0 0 0 6 0L5 8Z"/><path d="m19 8-3 6a3 3 0 0 0 6 0l-3-6Z"/></svg></div>
+        <h4>Ballast calculator</h4>
+        <p>Work out the ballast for your class minimum weight, and keep notes for every kart.</p>
+      </div>
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="9" height="16" rx="2"/><rect x="11" y="6" width="9" height="16" rx="2"/></svg></div>
+        <h4>iPhone and Android</h4>
+        <p>One account, both platforms. Race with friends whichever phone they carry.</p>
+      </div>
+      <div>
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18Z"/></svg></div>
+        <h4>Six languages</h4>
+        <p>English, Portuguese, Spanish, French, Italian and German.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="section-title">Pay only for what you'll use.</h2>
+    <p class="intro">Timing is free. Analysis and comparison are paid — but before you spend anything, Sektor comes with two real sessions and a race from Baltar with every feature unlocked, so you can see what you'd be getting.</p>
+    <div class="plans">
+      <div class="plan">
+        <h4>Free</h4>
+        <div class="price">0 €</div>
+        <p class="alt">Forever</p>
+        <ul>
+          <li>Import sessions</li>
+          <li>Lap times and best lap</li>
+          <li>Racing line on the map</li>
+          <li>Track leaderboards</li>
+          <li>Up to 5 sessions backed up to the cloud</li>
+          <li>Sample sessions with everything unlocked</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h4>Single session</h4>
+        <div class="price">1,99 €</div>
+        <p class="alt">One-off</p>
+        <ul>
+          <li>Analysis, video and comparison for one session, for good</li>
+          <li>The race it belongs to opens with it</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h4>Weekend pass</h4>
+        <div class="price">4,99 €</div>
+        <p class="alt">3 days</p>
+        <ul>
+          <li>Everything unlocked for three days</li>
+          <li>Sessions from the weekend stay unlocked for good (up to 10)</li>
+        </ul>
+      </div>
+      <div class="plan featured">
+        <h4>Pro</h4>
+        <div class="price">9,99 € <small>/ month</small></div>
+        <p class="alt">or 49,99 € / year</p>
+        <ul>
+          <li>Sectors, corners, G-force and the ideal line</li>
+          <li>Video synced with telemetry</li>
+          <li>Compare with other drivers</li>
+          <li>Unlimited cloud backup</li>
+          <li>Shared races, championships and groups</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fineprint">Prices shown in euros. The App Store and Google Play show the price in your own currency.</p>
+  </div>
+</section>
+
+<section class="maker">
+  <div class="container">
+    <blockquote>“Sektor started as the app I wanted at my own kart races: something that turned a GoPro file into an answer to one question — where am I losing time?”</blockquote>
+    <cite>Sektor is a small, independent app, made by a karter.</cite>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Your next tenth is in the data.</h2>
+    <p>Whether it's your first rental race or a full championship season, Sektor will show you where to find it.</p>
+    <div class="stores">
+      <span class="store"><svg viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 3v13h10V5H7Zm5 14.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/></svg><span><span>Coming soon to the</span><b>App Store</b></span></span>
+      <span class="store"><svg viewBox="0 0 24 24"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"/></svg><span><span>Coming soon to</span><b>Google Play</b></span></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div>
+      <a class="brand" href="./" style="color:var(--ink);font-weight:700"><img src="icon.png" alt="">Sektor</a>
+      <p>Karting lap timing and telemetry · <a href="mailto:hello.sektor.app@gmail.com">hello.sektor.app@gmail.com</a></p>
+    </div>
+    <nav>
+      <a href="privacidade.html">Privacy Policy</a>
+      <a href="termos.html">Terms of Use</a>
+      <a href="suporte.html">Help &amp; Support</a>
+      <a href="apagar-conta.html">Delete your account</a>
+    </nav>
+  </div>
 </footer>
 
-</div>
 </body>
 </html>
