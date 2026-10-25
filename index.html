@@ -55,63 +55,13 @@
     <div class="phones" aria-hidden="true">
       <div class="phone ios">
         <div class="screen">
-          <div class="map">
-            <svg viewBox="0 0 200 430" preserveAspectRatio="xMidYMin slice">
-              <path d="M0 40 Q80 55 200 20 M20 0 Q30 120 0 300" stroke="#fff" stroke-opacity=".6" stroke-width="5" fill="none"/>
-              <use href="#track" fill="none" stroke="#9aa19a" stroke-width="16" stroke-linejoin="round"/>
-              <use href="#track" fill="none" stroke="#5b605c" stroke-width="12" stroke-linejoin="round"/>
-              <use href="#track" fill="none" stroke="url(#speed)" stroke-width="3.5" stroke-linejoin="round"/>
-              <rect x="80" y="72" width="3" height="16" fill="#e60514" transform="rotate(-62 81 80)"/>
-              <circle cx="148" cy="134" r="4" fill="#8b3dff" stroke="#fff" stroke-width="1.5"/>
-              <circle cx="70" cy="226" r="4" fill="#1fb85a" stroke="#fff" stroke-width="1.5"/>
-            </svg>
-          </div>
-          <div class="sheet">
-            <h4>Baltar · Saturday</h4>
-            <div class="sub">11 laps · RaceBox Mini</div>
-            <div class="stats">
-              <div><span class="sub">Best lap</span><b class="best">52.814</b></div>
-              <div><span class="sub">Top</span><b>78 km/h</b></div>
-              <div><span class="sub">Distance</span><b>11.2 km</b></div>
-            </div>
-            <ul class="rows">
-              <li><span>Lap 4</span><span class="best">52.814 <span class="pill">BEST</span></span></li>
-              <li><span>Lap 5</span><span>53.107</span></li>
-              <li><span>Lap 6</span><span>52.990</span></li>
-              <li><span>Lap 7</span><span>53.402</span></li>
-            </ul>
-          </div>
+          <img src="screenshots/session-map.webp" alt="" width="600" height="1299">
         </div>
       </div>
 
-      <div class="phone android">
+      <div class="phone ios">
         <div class="screen">
-          <div class="pane">
-            <h3>Compare laps</h3>
-            <div class="sub">Lap 4 vs lap 7</div>
-            <div class="card chart">
-              <div class="sub">Speed</div>
-              <svg viewBox="0 0 200 80">
-                <polyline points="0,60 15,30 30,18 45,40 55,62 70,35 90,15 105,22 115,55 130,60 145,32 165,14 180,30 200,52" fill="none" stroke="#8b3dff" stroke-width="2.2" stroke-linejoin="round"/>
-                <polyline points="0,62 15,34 30,22 45,48 55,68 70,42 90,19 105,26 115,62 130,66 145,38 165,18 180,34 200,56" fill="none" stroke="#e60514" stroke-width="2.2" stroke-linejoin="round" stroke-opacity=".8"/>
-              </svg>
-              <div class="legend"><span><i style="background:#8b3dff"></i>Lap 4</span><span><i style="background:#e60514"></i>Lap 7</span></div>
-            </div>
-            <div class="card chart">
-              <div class="sub">Time gained / lost</div>
-              <svg viewBox="0 0 200 60">
-                <line x1="0" y1="20" x2="200" y2="20" stroke="currentColor" stroke-opacity=".2"/>
-                <polyline points="0,20 30,22 50,28 60,34 90,36 110,38 120,46 150,48 180,52 200,55" fill="none" stroke="#1fb85a" stroke-width="2.2" stroke-linejoin="round"/>
-              </svg>
-              <div class="legend"><span>Lap 4 is <b class="delta-good">0.588 s</b> faster</span></div>
-            </div>
-            <div class="card">
-              <div class="corner"><span><b>Turn 3</b><br><span class="sub">Braked 9 m earlier</span></span><span class="delta-bad">+0.214</span></div>
-            </div>
-            <div class="card">
-              <div class="corner"><span><b>Turn 7</b><br><span class="sub">4 km/h more at the apex</span></span><span class="delta-good">−0.102</span></div>
-            </div>
-          </div>
+          <img src="screenshots/compare-laps.webp" alt="" width="600" height="1299">
         </div>
       </div>
     </div>
@@ -131,25 +81,7 @@
     <div class="visual" aria-hidden="true">
       <div class="phone ios solo">
         <div class="screen">
-          <div class="pane">
-            <h3>New session</h3>
-            <div class="sub">Baltar · choose a file</div>
-            <div class="card file"><span class="ext" style="background:#2f7cf6">MP4</span><span><b>GX010482.MP4</b><span class="sub">GoPro HERO · GPS telemetry</span></span></div>
-            <div class="card file"><span class="ext" style="background:#e60514">CSV</span><span><b>RaceBox_Session_12.csv</b><span class="sub">RaceBox Mini · 25 Hz</span></span></div>
-            <div class="card file"><span class="ext" style="background:#1fb85a">GPX</span><span><b>baltar-qualifying.gpx</b><span class="sub">GPS track</span></span></div>
-            <div class="card">
-              <b style="font-size:12px">Reading GX010482.MP4</b>
-              <div class="sub">11 laps found · out lap discarded</div>
-              <div class="progress"><i></i></div>
-            </div>
-            <div class="card">
-              <ul class="rows">
-                <li style="border-top:0"><span>Lap 1</span><span>54.220</span></li>
-                <li><span>Lap 2</span><span>53.315</span></li>
-                <li><span>Lap 3</span><span class="best">52.990</span></li>
-              </ul>
-            </div>
-          </div>
+          <img src="screenshots/sessions-list.webp" alt="" loading="lazy" width="600" height="1299">
         </div>
       </div>
     </div>
@@ -164,26 +96,9 @@
       <p>Lay two laps over each other and Sektor shows you, corner by corner, where you braked too early, carried less speed or took a tighter line. Mini-sectors light up purple, green and yellow, and the coach turns it all into three things to try next session.</p>
     </div>
     <div class="visual" aria-hidden="true">
-      <div class="phone android solo">
+      <div class="phone ios solo">
         <div class="screen">
-          <div class="pane">
-            <h3>Corner by corner</h3>
-            <div class="sub">Lap 7 against your best</div>
-            <div class="card">
-              <div class="sub">Mini-sectors</div>
-              <div class="sectors">
-                <i style="background:#8b3dff"></i><i style="background:#1fb85a"></i><i style="background:#f2b705"></i><i style="background:#1fb85a"></i><i style="background:#f2b705"></i><i style="background:#f2b705"></i><i style="background:#8b3dff"></i><i style="background:#1fb85a"></i><i style="background:#f2b705"></i><i style="background:#1fb85a"></i>
-              </div>
-            </div>
-            <div class="card"><div class="corner"><span><b>Turn 1</b><br><span class="sub">Same line, same speed</span></span><span class="delta-good">−0.012</span></div></div>
-            <div class="card"><div class="corner"><span><b>Turn 3</b><br><span class="sub">Braked 9 m earlier</span></span><span class="delta-bad">+0.214</span></div></div>
-            <div class="card"><div class="corner"><span><b>Turn 5</b><br><span class="sub">Apex 1.4 m wide</span></span><span class="delta-bad">+0.131</span></div></div>
-            <div class="card"><div class="corner"><span><b>Turn 7</b><br><span class="sub">4 km/h more at the apex</span></span><span class="delta-good">−0.102</span></div></div>
-            <div class="card">
-              <b style="font-size:12px">Coach</b>
-              <div class="sub">Brake later into turn 3 — the data says you can hold it 9 metres longer.</div>
-            </div>
-          </div>
+          <img src="screenshots/lap-table.webp" alt="" loading="lazy" width="600" height="1299">
         </div>
       </div>
     </div>
@@ -200,31 +115,7 @@
     <div class="visual" aria-hidden="true">
       <div class="phone ios solo">
         <div class="screen">
-          <div class="pane">
-            <h3>Winter Cup</h3>
-            <div class="sub">Championship · round 4 of 6</div>
-            <div class="card">
-              <ul class="rows">
-                <li style="border-top:0"><span class="pos p1">1</span><span class="who">Rita</span><span>82 pts</span></li>
-                <li class="me"><span class="pos p2">2</span><span class="who">You</span><span>76 pts</span></li>
-                <li><span class="pos p3">3</span><span class="who">Miguel</span><span>71 pts</span></li>
-                <li><span class="pos">4</span><span class="who">Tiago</span><span>58 pts</span></li>
-                <li><span class="pos">5</span><span class="who">Inês</span><span>44 pts</span></li>
-              </ul>
-            </div>
-            <div class="card">
-              <b style="font-size:12px">Round 4 · Baltar</b>
-              <div class="sub">Fastest lap: Rita · <span class="best">52.611</span></div>
-            </div>
-            <div class="card chart">
-              <div class="sub">You vs Rita · best laps</div>
-              <svg viewBox="0 0 200 60">
-                <line x1="0" y1="30" x2="200" y2="30" stroke="currentColor" stroke-opacity=".2"/>
-                <polyline points="0,30 25,28 50,26 70,34 95,38 120,33 140,36 165,40 200,42" fill="none" stroke="#e60514" stroke-width="2.2" stroke-linejoin="round"/>
-              </svg>
-              <div class="legend"><span>Rita is <b class="delta-bad">0.203 s</b> ahead — mostly in turn 5</span></div>
-            </div>
-          </div>
+          <img src="screenshots/championship.webp" alt="" loading="lazy" width="600" height="1299">
         </div>
       </div>
     </div>

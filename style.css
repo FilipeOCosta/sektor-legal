@@ -131,6 +131,7 @@ footer.site a { margin-right: 1.1rem; }
 .phones .phone:nth-child(1) { left: 6%; top: 1.5rem; rotate: -4deg; z-index: 2; }
 .phones .phone:nth-child(2) { right: 4%; top: 0; rotate: 5deg; }
 .phone.solo { position: relative; margin: 0 auto; }
+.phone .screen > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
 .map { position: absolute; inset: 0; background: #dfe7d9; }
 @media (prefers-color-scheme: dark) { .map { background: #1d2420; } }
