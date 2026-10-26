@@ -166,7 +166,7 @@ footer.site a { margin-right: 1.1rem; }
 /* Feature blocks */
 .feature { padding: 5.5rem 0; border-top: 1px solid var(--line); }
 .feature .container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-.feature:nth-of-type(even) .copy { order: 2; }
+.feature.flip .copy { order: 2; }
 .feature .copy h2 { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 .8rem;
   padding: 0; border: 0; }
 .feature .copy h3 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.08; letter-spacing: -.03em; margin: 0 0 1.2rem; }
@@ -175,6 +175,18 @@ footer.site a { margin-right: 1.1rem; }
 .chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.3rem; padding: 0; list-style: none; }
 .chips li { margin: 0; font-size: .82rem; font-weight: 600; padding: .3rem .7rem; border-radius: 2rem; border: 1px solid var(--line);
   background: var(--surface); color: var(--ink); }
+.see-all { margin: 1.2rem 0 0; font-size: .95rem; font-weight: 600; }
+.see-all a { text-decoration: none; }
+
+/* Compatibility */
+.compat { padding: 5.5rem 0; border-top: 1px solid var(--line); }
+.compat table { margin: 0; font-size: .97rem; }
+.compat th, .compat td { padding: 1rem 1.5rem 1rem 0; }
+.compat td:first-child { color: var(--ink); width: 24%; }
+.compat td:first-child b { font-weight: 700; }
+.compat td:nth-child(2) { color: var(--ink); font-weight: 600; white-space: nowrap; }
+.compat-foot { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; margin-top: 2.2rem; }
+.compat-foot p { margin: 0; font-size: .97rem; }
 
 /* More grid */
 .more { padding: 5.5rem 0; border-top: 1px solid var(--line); background: var(--surface); }
@@ -187,7 +199,7 @@ footer.site a { margin-right: 1.1rem; }
 
 /* Pricing */
 .pricing { padding: 5.5rem 0; border-top: 1px solid var(--line); }
-.pricing .intro { max-width: 40rem; margin: -1.8rem 0 2.8rem; font-size: 1.05rem; }
+.pricing .intro, .compat .intro { max-width: 40rem; margin: -1.8rem 0 2.8rem; font-size: 1.05rem; }
 .plans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 .plan { background: var(--surface); border: 1px solid var(--line); border-radius: 1rem; padding: 1.4rem 1.3rem; display: flex; flex-direction: column; }
 .plan.featured { border-color: var(--accent-line); box-shadow: 0 0 0 1px var(--accent-line); }
@@ -222,10 +234,16 @@ footer.site a { margin-right: 1.1rem; }
   .grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 800px) {
+  .compat thead { display: none; }
+  .compat table, .compat tbody, .compat tr, .compat td { display: block; width: auto !important; }
+  .compat tr { padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+  .compat td { border: 0; padding: 0; }
+  .compat td:nth-child(2) { margin: .15rem 0 .4rem; color: var(--accent); white-space: normal; }
+  .compat-foot { grid-template-columns: 1fr; }
   .topbar nav { display: none; }
   .hero { padding: 3rem 0 2rem; }
   .hero .container, .feature .container { grid-template-columns: 1fr; gap: 2.5rem; }
-  .feature:nth-of-type(even) .copy { order: 0; }
+  .feature.flip .copy { order: 0; }
   .feature { padding: 4rem 0; }
   .phones { height: 30rem; max-width: 26rem; margin: 0 auto; width: 100%; }
   .phones .phone { width: 13.5rem; }
